@@ -1,0 +1,18 @@
+31 Mar 2025 14:46:02,734 INFO  repository.PersonDBRepository 17 <init> - Initializing PersonDBRepository with properties: {jdbc.url=jdbc:sqlite:/home/paul/IdeaProjects/databases/people.db}
+31 Mar 2025 14:46:02,759 TRACE repository.PersonDBRepository 23 add - Enter saving person Id=0Nume: Popescu Prenume:Ion S Varsta:20
+31 Mar 2025 14:46:02,760 TRACE repository.JdbcUtils 47 getConnection - Enter
+31 Mar 2025 14:46:02,760 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+31 Mar 2025 14:46:02,761 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:/home/paul/IdeaProjects/databases/people.db
+31 Mar 2025 14:46:02,761 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+31 Mar 2025 14:46:02,762 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+31 Mar 2025 14:46:03,024 TRACE repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6f46426d)
+31 Mar 2025 14:46:03,041 TRACE repository.PersonDBRepository 30 add - Saved 1 instances
+31 Mar 2025 14:46:03,042 TRACE repository.PersonDBRepository 35 add - Exit
+31 Mar 2025 14:46:03,043 TRACE repository.PersonDBRepository 57 findAll - Enter
+31 Mar 2025 14:46:03,043 TRACE repository.JdbcUtils 47 getConnection - Enter
+31 Mar 2025 14:46:03,044 TRACE repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6f46426d)
+31 Mar 2025 14:46:03,049 TRACE repository.PersonDBRepository 75 findAll - Exit with([Id=3Nume: Popescu Prenume:Ion Varsta:20, Id=4Nume: Ionescu Prenume:Andrei Varsta:25, Id=5Nume: Popescu Prenume:Ion S Varsta:20, Id=6Nume: Popescu Prenume:Ion S Varsta:20])
+31 Mar 2025 14:46:03,051 TRACE repository.PersonDBRepository 81 findByName - Enter finding persons with name Popescu
+31 Mar 2025 14:46:03,052 TRACE repository.JdbcUtils 47 getConnection - Enter
+31 Mar 2025 14:46:03,052 TRACE repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6f46426d)
+31 Mar 2025 14:46:03,053 TRACE repository.PersonDBRepository 101 findByName - Exit with([Id=3Nume: Popescu Prenume:Ion Varsta:20, Id=5Nume: Popescu Prenume:Ion S Varsta:20, Id=6Nume: Popescu Prenume:Ion S Varsta:20])
